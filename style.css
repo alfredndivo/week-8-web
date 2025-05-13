@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    text-align: left;
+    animation: fadeIn 1.5s ease-in;
+}
+
+header {
+  background-color: #3e8e41;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  animation: slideDown 1s ease-in-out;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: blue;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: lightgreen;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+.order-form input,
+.order-form select,
+.order-form textarea,
+.order-form button,
+form input,
+form textarea,
+form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #8b4513;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #5a2e0f;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #3e8e41;
+  color: white;
+}
+/* Navigation Bar */
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #8B4513;
+  color: #fff;
+}
+/* Table row hover effect */
+.container table tr:hover {
+    background-color: #e0ffe0;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
